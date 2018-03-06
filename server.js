@@ -25,19 +25,6 @@ app.use((req, res, next)=>{
     next();
 });
 
-app.use((req, res, next)=>{
-    console.log('1');
-    next();
-});
-
-app.use((req, res, next)=>{
-    console.log('2');
-    next();
-});
-
-app.use((req, res, next)=>{
-    console.log('3');
-});
 
 hbs.registerHelper('getCurrentYear', ()=>{
     return new Date().getFullYear();
